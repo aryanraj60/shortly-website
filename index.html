@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Simple Tailwind Starter</title>
+  </head>
+  <body>
+    <nav class="container mx-auto p-6">
+      <div class="nav-items-container flex items-center justify-between">
+        <div class="logo-menu-container flex items-center space-x-20">
+          <img src="./images/logo.svg" />
+          <div class="left-menu font-bold hidden lg:flex space-x-4">
+            <a class="text-grayishViolet hover:text-veryDarkViolet">Features</a>
+            <a class="text-grayishViolet hover:text-veryDarkViolet">Pricing</a>
+            <a class="text-grayishViolet hover:text-veryDarkViolet"
+              >Resources</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="hidden item-center space-x-6 font-bold text-grayishViolet lg:flex"
+        >
+          <div class="hover:text-veryDarkViolet self-center">Login</div>
+          <a
+            class="font-bold px-8 py-3 text-white bg-cyan rounded-full hover:opacity-70"
+          >
+            SignUp
+          </a>
+        </div>
+
+        <!--todo Hamburger Menu-->
+      </div>
+
+      <!--todo Mobile Menu-->
+    </nav>
+
+    <!--Hero Section-->
+    <section id="hero">
+      <div
+        class="container mt-16 mb-44 mx-auto p-6 flex flex-col items-center space-y-16 lg:flex-row-reverse lg:space-y-0 lg:gap-4"
+      >
+        <img
+          src="./images/illustration-working.svg"
+          class="md:w-180 lg:w-1/2"
+        />
+
+        <div
+          class="content-container flex flex-col items-center space-y-5 lg:w-1/2"
+        >
+          <h2 class="text-5xl font-bold text-center lg:text-6xl">
+            More than just shorter links
+          </h2>
+          <p class="text-gray-400 text-2xl text-center lg:max-w-md">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia
+            deleniti, iure eius porro id
+          </p>
+          <button class="p-4 bg-cyan font-bold rounded-xl text-white">
+            Get Started
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="shorten" class="bg-gray-100">
+      <div class="max-w-4xl mx-auto p-6 space-y-6">
+        <form
+          class="relative flex flex-col w-full p-10 space-y-4 bg-darkViolet rounded-lg md:flex-row md:space-y-0 md:space-x-3"
+        >
+          <input
+            class="p-3 flex-1 border-2 rounded-lg placeholder-yellow-500 focus:outline-none"
+            placeholder="shorten a link here"
+          />
+
+          <button
+            class="py-3 px-10 text-white bg-cyan rounded-lg hover:bg-cyanLight focus:outline-none md:py-2"
+          >
+            Shorten It!
+          </button>
+        </form>
+
+        <div
+          class="flex flex-col items-center justify-between w-full p-6 bg-white rounded-lg md:flex-row"
+        >
+          <p class="font-bold text-center text-veryDarkViolet md:text-left">
+            https://frontendmentor.io
+          </p>
+
+          <div
+            class="flex flex-1 flex-col justify-end md:flex-row space-x-4 space-y-2 md:space-y-0"
+          >
+            <div class="font-bold text-cyan self-center">
+              https://rel.ink/k4565w
+            </div>
+            <button
+              class="p-2 px-8 text-white bg-cyan rounded-lg hover:opacity-70 focus:outline-none"
+            >
+              Copy
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col items-center justify-between w-full p-6 bg-white rounded-lg md:flex-row"
+        >
+          <p class="font-bold text-center text-veryDarkViolet md:text-left">
+            https://twitter.com
+          </p>
+
+          <div
+            class="flex flex-1 flex-col justify-end md:flex-row space-x-4 space-y-2 md:space-y-0"
+          >
+            <div class="font-bold text-cyan self-center">
+              https://rel.ink/k4ada53w
+            </div>
+            <button
+              class="p-2 px-8 text-white bg-cyan rounded-lg hover:opacity-70 focus:outline-none"
+            >
+              Copy
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col items-center justify-between w-full p-6 bg-white rounded-lg md:flex-row"
+        >
+          <p class="font-bold text-center text-veryDarkViolet md:text-left">
+            https://facebook/page/addidas.com
+          </p>
+
+          <div
+            class="flex flex-1 flex-col justify-end md:flex-row space-x-4 space-y-2 md:space-y-0"
+          >
+            <div class="font-bold text-cyan self-center">
+              https://rel.ink/ad2wdad
+            </div>
+            <button
+              class="p-2 px-8 text-white bg-cyan rounded-lg hover:opacity-70 focus:outline-none"
+            >
+              Copy
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="stats" class="py-24 bg-gray-100">
+      <div class="container mx-auto px-3">
+        <h2 class="text-4xl mb-6 font-bold text-center md:text-5xl">
+          Advanced Statistics
+        </h2>
+        <p class="max-w-xs mx-auto text-center text-gray-400 md:max-w-md">
+          Track how your links are performing across the web with our advanced
+          Statistics Dashboard.
+        </p>
+      </div>
+    </section>
+
+    <section id="features" class="bg-gray-100 pb-32">
+      <div
+        class="relative container px-6 mx-auto flex flex-col items-start md:flex-row md:space-x-7"
+      >
+        <div
+          class="hidden absolute top-24 left-16 horizontal-line h-3 bg-cyan w-10/12 md:block"
+        ></div>
+
+        <div class="absolute w-2 left-1/2 h-full -ml-1 bg-cyan md:hidden"></div>
+
+        <div
+          class="box-1 relative flex flex-col p-6 space-y-6 bg-white rounded-lg md:w-1/3"
+        >
+          <div class="absolute -ml-10 left-1/2 -top-10 md:left-16">
+            <div
+              class="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet"
+            >
+              <img src="./images/icon-brand-recognition.svg" />
+            </div>
+          </div>
+
+          <h5
+            class="pt-6 text-xl font-bold text-center capitalize md:text-left"
+          >
+            Brand Recognization
+          </h5>
+
+          <p class="text-center text-gray-400 md:text-left">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+            perspiciatis sunt alias, dolores excepturi nemo? Molestiae, fugit
+          </p>
+        </div>
+
+        <div
+          class="box-2 relative flex flex-col p-6 mt-24 md:mt-8 space-y-6 bg-white rounded-lg md:w-1/3"
+        >
+          <div class="absolute -ml-10 left-1/2 -top-10 md:left-16">
+            <div
+              class="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet"
+            >
+              <img src="./images/icon-detailed-records.svg" />
+            </div>
+          </div>
+
+          <h5
+            class="pt-6 text-xl font-bold text-center capitalize md:text-left"
+          >
+            Detail Recorded
+          </h5>
+
+          <p class="text-center text-gray-400 md:text-left">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+            perspiciatis sunt alias, dolores excepturi nemo? Molestiae, fugit
+          </p>
+        </div>
+
+        <div
+          class="box-3 relative flex flex-col p-6 mt-24 md:mt-16 space-y-6 bg-white rounded-lg md:w-1/3"
+        >
+          <div class="absolute -ml-10 left-1/2 -top-10 md:left-16">
+            <div
+              class="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet"
+            >
+              <img src="./images/icon-fully-customizable.svg" />
+            </div>
+          </div>
+
+          <h5
+            class="pt-6 text-xl font-bold text-center capitalize md:text-left"
+          >
+            Fully Customizable
+          </h5>
+
+          <p class="text-center text-gray-400 md:text-left">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+            perspiciatis sunt alias, dolores excepturi nemo? Molestiae, fugit
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="cta" class="bg-darkViolet py-24">
+      <div class="container flex flex-col items-center p-2 space-y-6 mx-auto">
+        <h2 class="text-4xl text-white font-bold text-center">
+          Boost your link today
+        </h2>
+        <button
+          class="px-8 py-5 text-2xl font-bold text-white rounded-full bg-cyan hover:bg-cyanLight"
+        >
+          Get Started
+        </button>
+      </div>
+    </section>
+  </body>
+</html>
